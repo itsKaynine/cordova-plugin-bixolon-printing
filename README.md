@@ -41,7 +41,7 @@ cordova.plugins.BixolonPrinting.printConfig = {
 ### Connect to printer
 
 ```javascript
-cordova.plugins.bixolonPrint.connect(successCallback, errorCallback, {
+cordova.plugins.BixolonPrinting.connect(successCallback, errorCallback, {
     logicalDeviceName: String,
     deviceBus: int, // cordova.plugins.BixolonPrinting.DEVICE_BUS
     address: String,
@@ -52,10 +52,10 @@ cordova.plugins.bixolonPrint.connect(successCallback, errorCallback, {
 ### Print bitmap image
 
 ```javascript
-cordova.plugins.bixolonPrint.printBitmap(successCallback, errorCallback, {
+cordova.plugins.BixolonPrinting.printBitmap(successCallback, errorCallback, {
     base64Image: String,
     width: int,
-    brightness int, // 0 to 100 (SDK recommeded 13 to 88)
+    brightness int, // 0 to 100 (Bixolon recommeded 13 to 88)
     alignment: int // cordova.plugins.BixolonPrinting.ALIGNMENT
 });
 ```
@@ -63,7 +63,7 @@ cordova.plugins.bixolonPrint.printBitmap(successCallback, errorCallback, {
 ### Disconnect from printer
 
 ```javascript
-cordova.plugins.bixolonPrint.disconnect(successCallback, errorCallback);
+cordova.plugins.BixolonPrinting.disconnect(successCallback, errorCallback);
 ```
 
 ## Example
