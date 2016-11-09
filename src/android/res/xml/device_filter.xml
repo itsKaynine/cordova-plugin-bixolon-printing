@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- SPP-R210 -->
+	<usb-device product-id="81" vendor-id="5380" />
+	<!-- SPP-R200II -->
+	<usb-device product-id="40" vendor-id="5380" />
+	<!-- SPP-R200III -->
+	<usb-device product-id="91" vendor-id="5380" />
+	<!-- SPP-R300 -->
+	<usb-device product-id="33" vendor-id="5380" />
+	<!-- SPP-R310 -->
+	<usb-device product-id="92" vendor-id="5380" />
+	<!-- SPP-R400 -->
+	<usb-device product-id="41" vendor-id="5380" />
+	<!-- SRP-350plusIII -->
+	<usb-device product-id="61" vendor-id="5380" />
+	<!-- SRP-352plusIII -->
+	<usb-device product-id="62" vendor-id="5380" />
+	<!-- SRP-350III -->
+	<usb-device product-id="43" vendor-id="5380" />
+	<!-- SRP-352III -->
+	<usb-device product-id="60" vendor-id="5380" />
+	<!-- SRP-F310II -->
+	<usb-device product-id="87" vendor-id="5380" />
+	<!-- SRP-F312II -->
+	<usb-device product-id="88" vendor-id="5380" />
+	<!-- SRP-F313II -->
+	<usb-device product-id="90" vendor-id="5380" />
+	<!-- SRP-380 -->
+	<usb-device product-id="96" vendor-id="5380" />
+	<!-- SRP-382 -->
+	<usb-device product-id="97" vendor-id="5380" />
+	<!-- SRP-330II -->
+	<usb-device product-id="110" vendor-id="5380" />
+	<!-- SRP-332II-->
+	<usb-device product-id="111" vendor-id="5380" />
+	<!-- SRP-S300-->
+	<usb-device product-id="82" vendor-id="5380" />
+	<!-- SRP-340II -->
+	<usb-device product-id="114" vendor-id="5380" />
+	<!-- SRP-342II -->
+	<usb-device product-id="115" vendor-id="5380" />
+	<!-- STP-103III -->
+	<usb-device product-id="83" vendor-id="5380" />
+	<!-- SRP-275III -->
+	<usb-device product-id="89" vendor-id="5380" />
+</resources>

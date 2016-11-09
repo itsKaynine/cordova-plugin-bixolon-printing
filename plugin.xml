@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-bixolon-printing" version="0.1.0">
+    <name>BixolonPrinting</name>
+    <description>Bixolon mobile printer plugin for Cordova</description>
+    <license>Apache 2.0</license>
+    <keywords>Ionic,bixolon,print</keywords>
+    <repo>https://github.com/itsKaynine/cordova-plugin-bixolon-printing.git</repo>
+    <issue>https://github.com/itsKaynine/cordova-plugin-bixolon-printing/issues</issue>
+    
+    <author>Punnawut Khowkittipaiboon (itsKaynine)</author>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>    
+
+    <js-module src="www/bixolon-printing.js" name="BixolonPrinting">
+        <clobbers target="cordova.plugins.BixolonPrinting" />
+    </js-module>
+
+    <asset src="www/bixolon-printing.js" target="bixolon-printing.js" />
+
+
+    <!-- android -->
+    <platform name="android">
+        <source-file src="src/android/Printer.java" target-dir="src/com/itskaynine/cordova/plugin/BixolonPrinting" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Printer">
+                <param name="android-package" value="com.itskaynine.cordova.plugin.BixolonPrinting.Printer" />
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+            <uses-permission android:name="android.permission.BLUETOOTH" />
+            <uses-permission android:name="android.permission.WAKE_LOCK" />
+            <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+            <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+            <uses-feature android:name="android.hardware.wifi" android:required="false" />
+        </config-file>
+
+        <source-file src="src/android/libs/bixolon_printer.jar" target-dir="libs" framework="true"/>
+        <source-file src="src/android/libs/jpos114-controls.jar" target-dir="libs" framework="true"/>
+        <source-file src="src/android/libs/xerces.jar" target-dir="libs" framework="true"/>
+        <source-file src="src/android/res/xml/device_filter.xml" target-dir="res/xml"/>
+    </platform>
+
+</plugin>
