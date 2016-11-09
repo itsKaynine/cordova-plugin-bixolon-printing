@@ -52,7 +52,9 @@ public class Printer extends CordovaPlugin {
 
         super.initialize(cordova, webView);
 
-        posPrinter = new POSPrinter(cordova.getActivity());
+        this.context = cordova.getActivity();
+        posPrinter = new POSPrinter(this.context);
+        
         initVariables();
     }
 
@@ -60,7 +62,6 @@ public class Printer extends CordovaPlugin {
     public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) {
         Log.d(TAG, "execute_BEGIN");
 
-        this.context = cordova.getActivity();
         this.callbackContext = callbackContext;
         Log.i(TAG, "action: " + action);
 
