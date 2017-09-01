@@ -92,7 +92,7 @@ cordova.plugins.BixolonPrinting.connect(
 
         // Printing options
         var printObj = {
-            base64Image: b64Image
+            base64Image: b64Image,
             width: 500,
             brightness: 50,
             alignment: cordova.plugins.BixolonPrinting.ALIGNMENT.CENTER,
